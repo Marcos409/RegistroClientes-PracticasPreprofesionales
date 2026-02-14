@@ -26,5 +26,10 @@ app.use('/usuarios', usuariosRoutes);
 const adminRoutes = require('./routes/admin.routes')
 app.use('/admin', adminRoutes)
 
+// En tu app.js o server.js
+const clientesRoutes = require('./routes/clientes.routes');
+
+// Montar rutas
+app.use('/clientes', clientesRoutes);
 
 module.exports = app;
