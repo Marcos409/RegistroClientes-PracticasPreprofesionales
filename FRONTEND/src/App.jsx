@@ -4,14 +4,16 @@ import Usuarios from './pages/Usuarios'
 import Clientes from './pages/Clientes'  // ✅ IMPORTADO CORRECTAMENTE
 import AdminLayout from './layouts/AdminLayout'
 import PrivateRoute from './routes/PrivateRoute'
+import Dashboard from './pages/DashboardGerencial'
+import DashboardGerencial from './pages/DashboardGerencial'
 
 // Componentes temporales para las páginas que NO existen aún
-const Dashboard = () => (
-  <div style={{ padding: '2rem' }}>
-    <h1>Dashboard</h1>
-    <p>Bienvenido al panel de control principal</p>
-  </div>
-)
+//const Dashboard = () => (
+  //<div style={{ padding: '2rem' }}>
+   // <h1>Dashboard</h1>
+   // <p>Bienvenido al panel de control principal</p>
+ // </div>
+//)
 
 const Reportes = () => (
   <div style={{ padding: '2rem' }}>
@@ -34,13 +36,13 @@ function App() {
             <AdminLayout />
           </PrivateRoute>
         }>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<DashboardGerencial />} />
           <Route path="/usuarios" element={<Usuarios />} />
           <Route path="/clientes" element={<Clientes />} />  {/* ✅ AHORA USA EL COMPONENTE REAL */}
           <Route path="/reportes" element={<Reportes />} />
           
           {/* Ruta por defecto después del login */}
-          <Route index element={<Dashboard />} />
+          <Route index element={<DashboardGerencial />} />
         </Route>
 
         {/* Ruta 404 */}

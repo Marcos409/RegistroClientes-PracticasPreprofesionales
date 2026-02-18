@@ -29,6 +29,14 @@ app.use('/admin', adminRoutes)
 // En tu app.js o server.js
 const clientesRoutes = require('./routes/clientes.routes');
 
+
+
+
+// 👇 FALTA ESTA LÍNEA
+const dashboardRoutes = require('./routes/dashboard.routes');
+app.use('/dashboard', dashboardRoutes);  // 👈 O con /api/dashboard según tu estructura
+
+
 // Montar rutas
 app.use('/clientes', clientesRoutes);
 
