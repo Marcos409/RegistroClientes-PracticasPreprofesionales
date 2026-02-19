@@ -1,0 +1,233 @@
+/* frontend/src/pages/ReportesGerencial.css */
+
+.reportes-gerencial {
+    padding: 2rem;
+    background-color: #f8fafc;
+    min-height: 100vh;
+  }
+  
+  .reportes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .reportes-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+  }
+  
+  .reportes-fecha {
+    background: #f1f5f9;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #334155;
+    font-weight: 600;
+  }
+  
+  /* Grid de módulos - reutilizar estilos del dashboard */
+  .modulos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .modulo-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  
+  .modulo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #3a86ff;
+  }
+  
+  .modulo-card.active {
+    background: linear-gradient(135deg, #3a86ff, #6c63ff);
+    border-color: #3a86ff;
+    color: white;
+  }
+  
+  .modulo-icon {
+    font-size: 2rem;
+  }
+  
+  .modulo-nombre {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .modulo-contenido {
+    min-height: 400px;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    font-size: 1.1rem;
+    color: #64748b;
+  }
+  
+  .error-message {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  /* Estilos para tarjetas de reportes */
+  .reporte-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  .reporte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .reporte-titulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+  }
+  
+  .btn-descargar-pdf {
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.2s;
+  }
+  
+  .btn-descargar-pdf:hover {
+    background: #dc2626;
+  }
+  
+  .pdf-icon {
+    font-size: 1.2rem;
+  }
+  
+  /* Tablas de reportes */
+  .reporte-tabla {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .reporte-tabla th {
+    text-align: left;
+    padding: 0.75rem;
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .reporte-tabla td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .reporte-tabla tbody tr:hover {
+    background: #f8fafc;
+  }
+  
+  .badge {
+    background: #f1f5f9;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  .badge-success {
+    background: #d1fae5;
+    color: #065f46;
+  }
+  
+  .badge-warning {
+    background: #fed7aa;
+    color: #92400e;
+  }
+  
+  .badge-info {
+    background: #dbeafe;
+    color: #1e40af;
+  }
+  
+  /* Grid para estadísticas */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .stat-valor {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .reportes-gerencial {
+      padding: 1rem;
+    }
+    
+    .modulos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reportes-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }

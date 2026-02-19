@@ -1,26 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './pages/Login'
-import Usuarios from './pages/Usuarios'
-import Clientes from './pages/Clientes'  // ✅ IMPORTADO CORRECTAMENTE
-import AdminLayout from './layouts/AdminLayout'
-import PrivateRoute from './routes/PrivateRoute'
-import Dashboard from './pages/DashboardGerencial'
-import DashboardGerencial from './pages/DashboardGerencial'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Usuarios from './pages/Usuarios';
+import Clientes from './pages/Clientes';  // ✅ IMPORTADO CORRECTAMENTE
+import AdminLayout from './layouts/AdminLayout';
+import PrivateRoute from './routes/PrivateRoute';
+import DashboardGerencial from './pages/DashboardGerencial';
+import ReportesGerencial from './pages/ReportesGerencial';
 
-// Componentes temporales para las páginas que NO existen aún
-//const Dashboard = () => (
-  //<div style={{ padding: '2rem' }}>
-   // <h1>Dashboard</h1>
-   // <p>Bienvenido al panel de control principal</p>
- // </div>
-//)
-
-const Reportes = () => (
-  <div style={{ padding: '2rem' }}>
-    <h1>Reportes</h1>
-    <p>Página de reportes (en construcción)</p>
-  </div>
-)
+// Aqui se pusieron los componentes temporales para las páginas que NO existen aún
 
 function App() {
   return (
@@ -39,7 +26,7 @@ function App() {
           <Route path="/dashboard" element={<DashboardGerencial />} />
           <Route path="/usuarios" element={<Usuarios />} />
           <Route path="/clientes" element={<Clientes />} />  {/* ✅ AHORA USA EL COMPONENTE REAL */}
-          <Route path="/reportes" element={<Reportes />} />
+          <Route path="/reportes" element={<ReportesGerencial />} />
           
           {/* Ruta por defecto después del login */}
           <Route index element={<DashboardGerencial />} />

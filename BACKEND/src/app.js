@@ -40,4 +40,8 @@ app.use('/dashboard', dashboardRoutes);  // 👈 O con /api/dashboard según tu 
 // Montar rutas
 app.use('/clientes', clientesRoutes);
 
+// ✅ NUEVAS RUTAS DE REPORTES
+const reportesRoutes = require('./routes/reportes.routes');
+app.use('/reportes', reportesRoutes);
+
 module.exports = app;
