@@ -1,63 +1,40 @@
-🐔 Plataforma de Gestión de Clientes - Empresa Avícola Huancayo
-Desarrollo Full Stack | Prácticas Preprofesionales
+<div align="center">
+  
+# 🐔 Plataforma de Gestión de Clientes - Empresa Avícola Huancayo
+  
+### 🚀 Desarrollo Full Stack | Prácticas Preprofesionales
+  
 
-Este software ha sido diseñado para centralizar y optimizar el registro de clientes de la Empresa Avícola Huancayo. La solución permite un control exhaustivo de los datos, garantizando integridad y seguridad mediante un análisis profundo de código y pruebas de calidad.
+  
+*Software diseñado para centralizar y optimizar el registro de clientes con enfoque en integridad de datos, seguridad y mantenibilidad técnica.*
+  
+</div>
 
-🚀 Funcionalidades del Software
-Gestión de Clientes: Registro, edición y visualización de perfiles (DNI, RUC, contacto, zona).
+---
 
-Validación Inteligente: Lógica de negocio para asegurar que el DNI (8 dígitos) y RUC (11 dígitos) sean correctos.
+## ✨ Visión General
+Este sistema permite un **control exhaustivo de clientes** para la Empresa Avícola Huancayo, garantizando:
+- ✅ Validación robusta de documentos (DNI/RUC)
+- 🔒 Protección contra vulnerabilidades (inyecciones SQL)
+- ⚡ Búsqueda en tiempo real con filtrado avanzado
+- 📊 Código auditado con métricas cuantitativas de calidad
 
-Buscador Avanzado: Filtrado de clientes en tiempo real para optimizar la atención.
+---
 
-Seguridad: Protección contra inyecciones SQL mediante consultas parametrizadas.
+## 🚀 Funcionalidades Clave
 
-Mantenibilidad: Código analizado cuantitativamente para reducir la complejidad.
+| Funcionalidad          | Descripción                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **Gestión de Clientes** | Registro, edición y visualización completa de perfiles (DNI, RUC, contacto, zona geográfica) |
+| **Validación Inteligente** | Verificación automática: DNI (8 dígitos) y RUC (11 dígitos) con retroalimentación en tiempo real |
+| **Buscador Avanzado**   | Filtros dinámicos por nombre, documento o zona para optimizar la atención al cliente |
+| **Seguridad Reforzada** | Consultas parametrizadas con Sequelize para blindar la base de datos PostgreSQL |
+| **Mantenibilidad**      | Código analizado con SciTools Understand para reducir complejidad ciclomática |
 
-🛠️ Stack Tecnológico
-Frontend
-React: Interfaz modular, dinámica y reutilizable.
+---
 
-Axios: Gestión eficiente de peticiones HTTP al servidor.
+## 🛠️ Stack Tecnológico
 
-Bootstrap (React): Diseño adaptativo (responsive) y estilizado.
-
-Backend
-Node.js: Entorno de ejecución de alto rendimiento.
-
-Express: Framework para la creación de la API RESTful.
-
-PostgreSQL: Base de datos relacional robusta.
-
-Sequelize: ORM para la interacción segura y estructurada con los datos.
-
-Herramientas y Metodología
-Control de Versiones: Git + GitHub.
-
-Análisis Técnico: SciTools Understand (Análisis cuantitativo de complejidad).
-
-Gestión de Tareas: Trello (Organización bajo flujo Kanban).
-
-Metodología: Modelo Incremental (entregas funcionales por etapas).
-
-🛡️ Calidad y Pruebas (QA)
-Se aplicó un enfoque de Caja Blanca / Pruebas Dirigidas:
-
-Pruebas Unitarias: Validación de lógica en el backend con Jest/Mocha.
-
-Análisis Cuantitativo: Uso de Understand para medir métricas de complejidad ciclomática y acoplamiento.
-
-Auditoría de Seguridad: Verificación de parámetros en Sequelize para blindar la base de datos PostgreSQL.
-
-⚙️ Cómo levantar el Software (Instalación)
-1. Requisitos Previos
-Node.js instalado.
-
-PostgreSQL configurado y corriendo.
-
-Git instalado.
-
-2. Configuración de la Base de Datos
-Crea una base de datos en PostgreSQL llamada avicola_huancayo.
-
-Configura las credenciales en el archivo .env del backend (DB_USER, DB_PASSWORD, DB_HOST).
+### 💻 Frontend
+```tsx
+React • Axios • Bootstrap 5 • CSS3 • JSX
