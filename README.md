@@ -38,3 +38,6 @@ Este sistema permite un **control exhaustivo de clientes** para la Empresa Avíc
 ### 💻 Frontend
 ```tsx
 React • Axios • Bootstrap 5 • CSS3 • JSX
+### 💻 Backend
+```tsx
+Node.js • Express • PostgreSQL • Sequelize • JWT
